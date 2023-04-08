@@ -8,13 +8,17 @@ export const HomeModal = () => {
     <>
         <div className='home-modal'>
             <div className='home-modal-conteiner'>
-                <h1 className='home-modal-title'>Welcome to CodeLeap Network!</h1>
+                <div>
+                    <h1 className='home-modal-title'>Welcome to CodeLeap Network!</h1>
+                </div>
                 <div className='home-modal-align'>
                     <label htmlFor='user' className='home-modal-label'> Please enter your username
                         <input type='text' className='home-modal-input' name='user' required placeholder='John Doe'></input>
                     </label>
                 </div>
-                <button className='home-modal-button'>ENTER</button>
+                <div className='home-modal-button-conteiner'>
+                    <button className='home-modal-button'>ENTER</button>
+                </div>
             </div>
         </div>
     </>
