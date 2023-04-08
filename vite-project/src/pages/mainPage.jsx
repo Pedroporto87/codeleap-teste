@@ -1,12 +1,21 @@
 import React from 'react'
+import { Navbar } from '../components/navbar'
+import '../styles/mainpage.scss'
 
 export const Posts = () => {
   return (
-    <div>
-        <p>pagina principal
+    <>
+    <div className='mainpage'>
+      <div className='mainpage-conteiner'>
+        <Navbar />
+          <div>
+              <p>pagina principal
 
-        </p>
+              </p>
+          </div>
+      </div>
     </div>
+    </>
   )
 }
 

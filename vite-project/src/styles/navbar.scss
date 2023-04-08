@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    height: 5rem;
+    background-color: rgba(118, 149, 236, 1);
+    .navbar-title{
+        display: flex;
+        font-family: 'Roboto';
+        color: rgba(255, 255, 255, 1);
+        font-style: bold;
+        font-size: 1.375rem;
+        margin: 1.6875rem 0 0 2.3125rem
+        
+    }
+}
