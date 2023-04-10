@@ -12,7 +12,7 @@ export const PostCard = () => {
             title,
             content,
         })
-        
+
       }
 
   return (
