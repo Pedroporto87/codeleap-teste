@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Logo  from '../photo/Captura de Tela (22).png'
+import Logo  from '../photo/Captura de Tela (24).png'
 import { HomeModal } from '../components/homeModal.jsx'
 import '../styles/home.scss'
 
@@ -15,8 +15,8 @@ export const Home = () => {
   
   return (
     <>
-        <div className='home-image'>
-            <img src={Logo} alt='CodeLeaps logo' />
+        <div className='home'>
+            <img src={Logo} alt='CodeLeaps logo' className='home-img' />
         </div>
         {open && <HomeModal />}
     </>

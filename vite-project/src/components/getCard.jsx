@@ -3,11 +3,10 @@ import '../styles/getCard.scss'
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 import { BiEdit } from 'react-icons/bi'
-import { MdDeleteForever } from 'react-icons/md'
+import { DeleteButtom } from './deleteButtom';
 
 export const GetCard = () => {
     const [read, setRead] = useState([]);
-    const [buttom, setButtom] = useState('')
     const username = localStorage.getItem('myUsername')
     useEffect(() => {
         axios.get(`https://dev.codeleap.co.uk/careers/`)
@@ -26,8 +25,8 @@ export const GetCard = () => {
                     <h1 className='get-card-h1'>My Post at CodeLeap Network!</h1>
                     { username === data.username &&
                      <div className='get-card-icons'>
-                        <MdDeleteForever className='get-card-svg'/>
-                        <BiEdit className='get-card-svg' />
+                        <DeleteButtom data={data} />
+                        <BiEdit data={data}  />
                     </div>}
                 </div>
                 <div className='get-card-data-user'>
