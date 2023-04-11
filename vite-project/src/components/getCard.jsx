@@ -25,7 +25,7 @@ export const GetCard = () => {
                     <h1 className='get-card-h1'>My Post at CodeLeap Network!</h1>
                     { username === data.username &&
                      <div className='get-card-icons'>
-                        <DeleteButtom data={data} />
+                        <DeleteButtom data={data} read={read} />
                         <BiEdit data={data}  />
                     </div>}
                 </div>
