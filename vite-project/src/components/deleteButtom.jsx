@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MdDeleteForever } from 'react-icons/md'
 import { DeleteCard } from './deleteCard'
 
-export const DeleteButtom = ({data}) => {
+export const DeleteButtom = ({data, read}) => {
     const [open, setOpen] = useState(false)
 
     const showModal = () => {setOpen((prev) => !prev)}

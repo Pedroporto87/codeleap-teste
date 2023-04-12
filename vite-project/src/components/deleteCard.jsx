@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import '../styles/deleteCard.scss'
+import '../styles/deleteCard.scss'
 
 
 export const DeleteCard = ({data,  onClose=()=>{}}) => {
@@ -13,7 +14,6 @@ export const DeleteCard = ({data,  onClose=()=>{}}) => {
         e.preventDefault()
          onClose()
     }
-
   return (
     <>
         <div className='delete-card' id={data.id} >
