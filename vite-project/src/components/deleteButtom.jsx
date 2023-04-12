@@ -12,7 +12,7 @@ export const DeleteButtom = ({data, read}) => {
     <>
     <div>
         <MdDeleteForever className='delete-button' onClick={showModal} />
-            {open ? (<DeleteCard onClose={() => setOpen(false)} data={data} />):''}
+        {open ? (<DeleteCard onClose={() => setOpen(false)} data={data} />):''}
 
     </div>
     </>
