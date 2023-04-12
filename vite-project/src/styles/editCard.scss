@@ -1,0 +1,116 @@
+.edit-card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(153, 153, 153, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .edit-card-conteiner{
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        height: 20.875rem;
+        width: 41.25rem;
+        border-radius: 1rem;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        .edit-card-title{
+            display: flex;
+            width: 25.875rem;
+            height: 26px;
+            font-size: 1.375rem;
+            font-family: 'Roboto';
+            font-weight: 700;
+            color: rgba(0, 0, 0, 1);
+            margin: 1.5rem 0 0 1.5rem;
+        }
+        .edit-card-label-title{
+            display: flex;
+            flex-direction: column;
+            width: 5.875rem;
+            height: 1.1875rem;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Roboto';
+            margin: 1.5rem 0 .5rem 1.5rem; 
+            color: rgba(0, 0, 0, 1);   
+        }
+        .edit-card-input-title{
+            width: 38.25rem;
+            height: 2rem;
+            border-radius: .5rem;
+            border: solid rgba(119, 119, 119, 1) .0625rem;
+            padding: 0;
+            margin-left:1.5rem;
+        }
+        .edit-card-label-textbox{
+            display: flex;
+            flex-direction: column;
+            width: 7.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Roboto';
+            color:rgba(0, 0, 0, 1);
+            margin: 1.5rem 0 .5rem 1.5rem;
+        }
+        .edit-card-textbox{
+            width: 38.25rem;
+            height: 4.625rem;
+            border-radius: .5rem;
+            border: solid rgba(119, 119, 119, 1) .0625rem;
+            margin-left: 1.5rem;
+            padding: 0;
+        }
+        .edit-card-buttons{
+            display: flex;
+            flex-direction: row;
+            width: 16rem;
+            height: 2rem;
+            justify-content: space-between;
+            margin: 1.25rem 1.5rem 0 23.75rem;
+            .edit-cancel-button{
+                width: 6.25rem;
+                height: 2rem;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+                border-radius: .5rem;
+                background-color: rgba(255, 255, 255, 1);
+                border: 1px solid;
+                font-family: 'Roboto';
+                font-size: 1rem;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0 0 0.5rem 0 rgba(153, 153, 153, 1);
+                };
+            }
+            .edit-save-button{
+                width: 6.25rem;
+                height: 2rem;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+                border-radius: .5rem;
+                background-color: rgba(71, 185, 96, 1);
+                border: 1px solid;
+                font-family: 'Roboto';
+                color: rgba(255, 255, 255, 1);
+                font-size: 1rem;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0 0 0.5rem 0 rgba(71, 185, 96, 1);
+                };
+            }
+
+        }
+    }
+
+}

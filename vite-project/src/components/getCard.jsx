@@ -2,8 +2,8 @@ import React from 'react'
 import '../styles/getCard.scss'
 import { useState, useEffect } from 'react';
 import axios from 'axios'
-import { BiEdit } from 'react-icons/bi'
 import { DeleteButtom } from './deleteButtom';
+import { EditButtom } from './editButtom';
 
 export const GetCard = () => {
     const [read, setRead] = useState([]);
@@ -25,8 +25,8 @@ export const GetCard = () => {
                     <h1 className='get-card-h1'>My Post at CodeLeap Network!</h1>
                     { username === data.username &&
                      <div className='get-card-icons'>
-                        <DeleteButtom data={data} read={read} />
-                        <BiEdit data={data}  />
+                        <DeleteButtom data={data} />
+                        <EditButtom data={data} />
                     </div>}
                 </div>
                 <div className='get-card-data-user'>
