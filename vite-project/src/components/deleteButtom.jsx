@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MdDeleteForever } from 'react-icons/md'
 import { DeleteCard } from './deleteCard'
 
-export const DeleteButtom = ({data}) => {
+export const DeleteButtom = ({data, read}) => {
     const [open, setOpen] = useState(false)
 
     const showModal = () => {setOpen((prev) => !prev)}
@@ -12,7 +12,7 @@ export const DeleteButtom = ({data}) => {
     <>
     <div>
         <MdDeleteForever className='delete-button' onClick={showModal} />
-            {open && <DeleteCard open={open} data={data} />}
+            {open ? (<DeleteCard onClose={() => setOpen(false)} data={data} />):''}
 
     </div>
     </>
