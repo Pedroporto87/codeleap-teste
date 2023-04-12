@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios'
 import { DeleteButtom } from './deleteButtom';
 import { EditButtom } from './editButtom';
+import moment from 'moment';
 
 export const GetCard = () => {
     const [read, setRead] = useState([]);
@@ -25,13 +26,13 @@ export const GetCard = () => {
                     <h1 className='get-card-h1'>My Post at CodeLeap Network!</h1>
                     { username === data.username &&
                      <div className='get-card-icons'>
-                        <DeleteButtom data={data} />
-                        <EditButtom data={data} />
+                        <DeleteButtom className='get-card-buttons' data={data} />
+                        <EditButtom className='get-card-buttons' data={data} />
                     </div>}
                 </div>
                 <div className='get-card-data-user'>
                     <p className='get-card-user'>@{data.username}</p>
-                    <p className='get-card-timestamp'>{data.created_datetime}</p>
+                    <p className='get-card-timestamp'>{moment(data.created_datetime).fromNow()}</p>
                 </div>
                 <p className='get-card-api-content'>{data.content}</p>
             </div>
