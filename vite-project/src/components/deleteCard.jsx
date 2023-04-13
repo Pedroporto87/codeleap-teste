@@ -8,7 +8,7 @@ export const DeleteCard = ({data,  onClose=()=>{}}) => {
 
     const onDelete = (id) =>{
         const string = JSON.stringify(data.id)
-        axios.delete(`http://dev.codeleap.co.uk/careers/${string}/`)
+        axios.delete(`https://dev.codeleap.co.uk/careers/${string}/`)
     }
     function CloseModal(e){
         e.preventDefault()
