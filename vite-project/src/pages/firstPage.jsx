@@ -3,7 +3,7 @@ import Logo  from '../photo/Captura de Tela (24).png'
 import { HomeModal } from '../components/homeModal.jsx'
 import '../styles/home.scss'
 
-export const Home = () => {
+const FirstPage = () => {
     const [open, setOpen] = useState(false)
   
     useEffect(() =>{
@@ -22,3 +22,4 @@ export const Home = () => {
     </>
   )
 }
+export default FirstPage

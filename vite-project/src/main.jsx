@@ -2,8 +2,8 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { Home } from './pages/firstPage'
-import { Posts } from './pages/mainPage'
+import FirstPage from './pages/firstPage'
+import MainPage from './pages/mainPage'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -11,18 +11,18 @@ const router = createBrowserRouter([
     children: [
       {
         path:"/",
-        element: <Home />,
+        element: <FirstPage />,
       },
       {
         path:"/posts",
-        element: <Posts />,
+        element: <MainPage />,
       },
     ],
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  
     <RouterProvider router={router} />
-  </React.StrictMode>,
+  
 )

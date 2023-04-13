@@ -16,7 +16,7 @@ export const HomeModal = () => {
     })
 
   return (
-    <>
+    
         <div className='home-modal'>
             <div className='home-modal-conteiner'>
                 <div>
@@ -32,7 +32,7 @@ export const HomeModal = () => {
                 </div>
             </div>
         </div>
-    </>
+    
   )
 }
 

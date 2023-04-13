@@ -9,13 +9,9 @@ export const DeleteButtom = ({data}) => {
     
     
   return (
-    <>
     <div>
         <MdDeleteForever className='delete-button' onClick={showModal} />
         {open ? (<DeleteCard onClose={() => setOpen(false)} data={data} />):''}
-
     </div>
-    </>
-
     )
 }

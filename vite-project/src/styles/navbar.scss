@@ -4,6 +4,19 @@
     width: 50rem;
     height: 5rem;
     background-color: rgba(118, 149, 236, 1);
+    @media screen{
+        @media(max-width: 768px){
+            width: 50rem;
+            }
+         @media(max-width:425px){
+            width: 26.5625rem;
+        }
+        @media(max-width:375px){
+            width: 23.4375rem;
+        }
+       
+        
+    }
     .navbar-title{
         display: flex;
         font-family: 'Roboto';

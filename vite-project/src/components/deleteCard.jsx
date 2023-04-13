@@ -15,7 +15,7 @@ export const DeleteCard = ({data,  onClose=()=>{}}) => {
          onClose()
     }
   return (
-    <>
+    
         <div className='delete-card' id={data.id} >
             <div className='delete-card-conteiner' >
                 <h1 className='delete-card-title'>Are you sure you want delete this item?</h1>
@@ -25,6 +25,6 @@ export const DeleteCard = ({data,  onClose=()=>{}}) => {
                 </div>
             </div>
         </div>
-    </>
+    
   )
 }

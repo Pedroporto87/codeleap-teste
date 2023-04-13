@@ -6,6 +6,18 @@
     border: .0625rem solid rgba(153, 153, 153, 1);
     border-radius: 1rem;
     margin-top: 1.5rem;
+    @media screen {
+        @media screen {
+            @media(max-width:425px){
+                width: 26rem;
+                margin: 1.5rem 0 0 0rem
+            }
+        }
+        @media(max-width:375px){
+            width: 20rem;
+            margin: 1rem 0 0 0;
+        }
+    }
     .post-cart-title{
         display: flex;
         width: 18.6875rem;
@@ -36,6 +48,17 @@
                 border: solid rgba(119, 119, 119, 1) .0625rem;
                 padding: 0;
                 margin-left:1.5rem;
+                @media screen {
+                    @media screen {
+                        @media(max-width:425px){
+                            width: 24rem;
+                        }
+                    
+                    @media(max-width:375px){
+                        width: 18rem;
+                    }
+                }
+                }
             }
         
         .post-cart-label-2{
@@ -54,6 +77,14 @@
                 border: solid rgba(119, 119, 119, 1) .0625rem;
                 margin-left: 1.5rem;
                 padding: 0;
+                @media screen {
+                    @media(max-width:425px){
+                        width: 24rem;
+                    }
+                    @media(max-width:375px){
+                        width: 18rem;
+                    }
+                }
             }
             .post-card-b-conteiner{
                 display: flex;

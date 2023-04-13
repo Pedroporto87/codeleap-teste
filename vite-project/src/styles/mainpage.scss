@@ -16,6 +16,11 @@
         flex-direction: column;
         align-items: center;
         background-color: rgba(255, 255, 255, 1);
+        @media screen {
+            @media(max-width: 425px){
+            width: 100%;
+            }
+        }
         
         
     }

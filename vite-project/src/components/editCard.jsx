@@ -23,7 +23,6 @@ export const EditCard = ({data,  onClose=()=>{}}) => {
     }
 
   return (
-    <>
     <div className='edit-card' id={data.id} >
         <div className='edit-card-conteiner' >
             <h1 className='edit-card-title'>Edit Item</h1>
@@ -39,6 +38,5 @@ export const EditCard = ({data,  onClose=()=>{}}) => {
             </div>
         </div>
     </div>
-</>
   )
 }
