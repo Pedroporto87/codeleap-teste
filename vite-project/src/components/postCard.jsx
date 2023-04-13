@@ -12,11 +12,10 @@ export const PostCard = () => {
             title,
             content,
         })
-
       }
 
   return (
-    <>
+    
     <div className='post-cart'>
         <div className='post-cart-title'>
             <h1 className='post-cart-h1'>What's on your mind?</h1>
@@ -33,7 +32,7 @@ export const PostCard = () => {
         
 
     </div>
-    </>
+    
   )
 }
 

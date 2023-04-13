@@ -4,9 +4,8 @@ import '../styles/mainpage.scss'
 import { PostCard } from '../components/postCard'
 import { GetCard } from '../components/getCard'
 
-export const Posts = () => {
+const MainPage = () => {
   return (
-    <>
     <div className='mainpage'>
       <div className='mainpage-conteiner'>
         <Navbar />
@@ -14,7 +13,6 @@ export const Posts = () => {
         <GetCard />
       </div>
     </div>
-    </>
   )
 }
-
+export default MainPage

@@ -1,9 +1,34 @@
 .home{
     display: flex;
     flex-direction: column;
-    height: 50%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5%;
    
     }
-    
+    @media(max-width:26.5625rem){
+      .home{
+         margin-top: 40%;
+      }
+      .home-img{
+         justify-content: center;
+         align-items: center;
+         top: 50%;
+         width: 15.625rem;
+         height: 11.25rem;
+        }
+    }
+
+    @media (max-width: 23.4375rem) {
+       .home{
+         margin-top: 40%;
+        justify-content: center;
+        align-items: center;
+        .home-img{
+         justify-content: center;
+         top: 50%;
+         width: 15.625rem;
+         height: 11.25rem;
+        }
+       } 
+    }
