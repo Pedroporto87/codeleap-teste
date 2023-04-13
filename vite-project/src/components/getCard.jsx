@@ -15,10 +15,6 @@ export const GetCard = () => {
                 setRead(response.data.results)
             })
     })
-        const ordinals = ['First', 'Second', 'Third', 'Forth', 'Fifth', 'Sixth', 'Seventh', 'Eighth', 'Nineth']
-        const ordinalTitle = () => {
-            Object.keys(read).map(index => ordinals[index])
-        }
     
   return (
     <>
