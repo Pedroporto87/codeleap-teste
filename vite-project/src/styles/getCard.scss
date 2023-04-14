@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 47rem;
-    height: 19.75rem;
+    height: auto;
     border: .0625rem solid rgba(153, 153, 153, 1);
     border-radius: 1rem;
     margin: 1.5rem 1.5rem 0 1.5rem;
@@ -113,11 +113,19 @@
     }
     .get-card-api-content{
         display: flex;
-        width: auto;
+    
         height: auto;
         margin: 1rem 1.5rem;
         font-size: 1.125rem;
         font-family: 'Roboto';
         font-weight: 400;
+        @media screen {
+            @media(max-width:425px){
+                width: 23rem;
+            }
+            @media(max-width:375px){
+                max-width: 18.75rem;
+            }
+        }
     }
 }
